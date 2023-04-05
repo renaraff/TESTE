@@ -6,6 +6,8 @@ document.getElementById( "btn-soma" ).addEventListener( "click" , soma );
 
 document.getElementById( "btn-divisao" ).addEventListener( "click" , divisao );
 
+document.getElementById( "btn-multiplicar" ).addEventListener( "click" , multiplicar );
+
 function showcolor ()
 {
     document.body.style.backgroundColor = "red";
@@ -30,4 +32,10 @@ function divisao ()
     let num1 = document.getElementById( "num3" ).value;
     let num2 = document.getElementById( "num4" ).value;
     document.getElementById("resultado2").innerHTML = parseFloat(num3) / parseFloat(num4);
+}
+function multiplicar ()
+{
+    let num1 = document.getElementById( "num5" ).value;
+    let num2 = document.getElementById( "num6" ).value;
+    document.getElementById( "resultado3" ).innerHTML = parseFloat(num5) * parseFloat(num6);
 }
